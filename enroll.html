@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enroll | NORAX ACADEMY</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-symbol">
+          <span>N</span>
+          <small><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></small>
+        </div>
+        <div class="logo-text">
+          <strong>NORAX</strong>
+          <span>ACADEMY</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="about.html">About</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="enroll.html" class="btn btn-primary nav-btn">Enroll Now →</a>
+      <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="hero-label">NORAX ACADEMY</div>
+      <h1>Start Your Tech Journey</h1>
+      <p>Complete the form below and our team will contact you with the next steps.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container enrollment-container">
+      <div class="enrollment-intro">
+        <div class="section-label">APPLICATION</div>
+        <h2>Apply to NORAX ACADEMY</h2>
+        <p>Tell us a little about yourself and the program you are interested in.</p>
+
+        <div class="enrollment-note">
+          <strong>What happens next?</strong>
+          <ol>
+            <li>Submit your application.</li>
+            <li>Our team reviews your information.</li>
+            <li>We contact you about the program.</li>
+            <li>Complete your registration.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="contact-form-box">
+        <form action="backend/enrollment.php" method="POST">
+          <label>Full Name</label>
+          <input type="text" name="fullname" placeholder="Enter your full name" required />
+
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="your@email.com" required />
+
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="+237 ..." required />
+
+          <label>Program</label>
+          <select name="program_id" id="programSelect" required>
+            <option value="">Select a program</option>
+            <option value="1">Full-Stack Web Development</option>
+            <option value="2">Data Analytics &amp; AI</option>
+            <option value="3">Cybersecurity</option>
+            <option value="4">UI/UX &amp; Product Design</option>
+            <option value="5">Digital Marketing &amp; AI</option>
+            <option value="6">IT Support &amp; Networking</option>
+            <option value="7">AI Automation &amp; Business Technology</option>
+          </select>
+
+          <label>Preferred Learning Mode</label>
+          <select name="mode">
+            <option>Online</option>
+            <option>On Campus</option>
+            <option>Hybrid</option>
+          </select>
+
+          <label>Tell us about yourself</label>
+          <textarea name="additional_info" rows="5" placeholder="Your background, goals or questions..."></textarea>
+
+          <button type="submit" class="btn btn-primary full-button">Submit Application →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>NORAX ACADEMY</h3>
+        <p>Learn. Build. Grow.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="about.html">About</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>+237 688 911 917</p>
+        <p>+237 680 092 008</p>
+        <p>noraxacademy6@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="copyright">© 2026 NORAX ACADEMY. All Rights Reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
