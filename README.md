@@ -1,2 +1,3 @@
 # interns-project
-E-commerce 
+Internship project
+
